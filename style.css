@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+
+}
+
+.content {
+    width: 350px;
+    border: 1px solid black;
+    background-color: rgba(10, 17, 43, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    color: #FFD700;
+}
+
+.output {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 8px;
+    align-items: center;
+    background-color: rgb(28, 6, 38);
+}
+
+.output_password {
+    border: none;
+    padding: 12px;
+    background-color: transparent;
+    color: rgb(255, 213, 0);
+    font-size: 16px;
+    width: 80%;
+    outline: none;
+}
+
+.output_password::placeholder {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(255, 213, 0);
+}
+
+.output div {
+    cursor: pointer;
+    padding: 12px;
+    background-color: #FFD700;
+    color: black;
+    font-weight: bold;
+    border-radius: 0 8px 8px 0;
+    transition: background-color 0.3s ease;
+}
+
+.output div:hover {
+    background-color: #FFA500;
+}
+
+.input {
+    background-color: rgb(28, 6, 38);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.password_len {
+    margin-bottom: 15px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password_len span {
+    background-color: #FFD700;
+    color: black;
+    font-weight: bold;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label {
+    margin-right: 20px;
+    cursor: pointer;
+}
+.checking{
+    margin: 10px 0px;
+}
+.strength {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.strength span {
+    color: #FFD700;
+}
+
+.strength .color {
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.Strength{
+    height:20px;
+    width: 20px;
+    border-radius: 100%; 
+    background-color: white;   
+}
+.generatbutton {
+    height: 40px;
+    width: 100%;
+    color: black;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.generatbutton:hover {
+    background-color: #FFA500;
+}

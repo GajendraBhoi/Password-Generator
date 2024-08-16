@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+<body>
+    <div class="wrapper">
+       <div class="content">
+            <h2>
+                PASSWORD GENERATOR
+            </h2>
+            <div class="output">
+                <input type="text" class="output_password" placeholder="PASSWORD">
+                <div CopyButton>
+                    COPY
+                </div>
+            </div>
+            <div class="input">
+                <div class="password_len">
+                    <p>Password length</p>
+                    <span password_length_value>0</span>
+                </div>
+                
+                <!-- slider -->
+                <input type="range" id="slider" max="20" min="1" slider>
+
+                <!-- checkBoxes -->
+                <div class="checking">
+                    <input type="checkbox" id="uppercase" class="marking up" big>
+                    <label for="uppercase">Include Uppercase Letter</label>
+                </div>
+
+                <div class="checking">
+                    <input type="checkbox" id="lowercase" class="marking low" small>
+                    <label for="lowercase">Include lowercase Letter</label>
+                </div>
+                
+                <div class="checking">
+                    <input type="checkbox" id="numbers" class="marking num" digits >
+                    <label for="numbers">Include Numbers</label>
+                </div>
+                
+                <div class="checking">
+                    <input type="checkbox" id="symbols" class="marking sy" signs>
+                    <label for="symbols">Include Symbolsr</label>
+                </div>
+                
+                <!-- strength -->
+                <div class="strength">
+                    <span>STRENGTH</span>
+                    <div Strength class="Strength"></div>
+                </div>
+
+                <!-- generate button  -->
+                <button GENERATE_PASSWORD_BUTTON class="generatbutton">GENERATE PASSWORD</button>
+
+            </div>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
